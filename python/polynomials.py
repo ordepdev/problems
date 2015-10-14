@@ -13,7 +13,7 @@ def evaluate_poly(poly, x):
     result += poly[i] * (x ** i)
   return result
 
-poly = (0.0, 0.0, 5.0, 9.3, 7.0)
-x = -13 
-print evaluate_poly(poly, x)
+#poly = (0.0, 0.0, 5.0, 9.3, 7.0)
+#x = -13 
+#print evaluate_poly(poly, x)
 
