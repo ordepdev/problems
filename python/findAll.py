@@ -1,11 +1,11 @@
 def findAll(words, letters):
 	"""
 	assumes: words is a list of words in lowercase.
-					 letters is a str of lowercase letters.
-					 No letter occurs in lStr more than once.
+ 		 letters is a str of lowercase letters.
+		 No letter occurs in lStr more than once.
 	returns: a list of all the words in words that
-					 contain each of the letters in letters
-					 exactly once and no letters not in letters.
+		 contain each of the letters in letters
+		 exactly once and no letters not in letters.
 	"""
 	
 	result = []
