@@ -1,11 +1,11 @@
 import static org.junit.Assert.*;
 import org.junit.Test;
 
-public class UnionFindTests {
+public class QuickFindTests {
 
 	@Test
-	public void union_find_should_connect_two_points() {
-		UnionFind uf = new UnionFind(2);
+	public void quick_find_should_connect_two_points() {
+		QuickFind uf = new QuickFind(2);
 		
 		uf.union(0, 1);
 		
@@ -13,8 +13,8 @@ public class UnionFindTests {
 	}
 	
 	@Test
-	public void union_find_should_connect_three_points() {
-		UnionFind uf = new UnionFind(3);
+	public void quick_find_should_connect_three_points() {
+		QuickFind uf = new QuickFind(3);
 		
 		uf.union(0, 2);
 		uf.union(1, 2);
@@ -25,8 +25,8 @@ public class UnionFindTests {
 	}
 	
 	@Test
-	public void union_find_should_have_one_component() {
-		UnionFind uf = new UnionFind(3);
+	public void quick_find_should_have_one_component() {
+		QuickFind uf = new QuickFind(3);
 		
 		uf.union(0, 2);
 		uf.union(1, 2);
@@ -35,8 +35,8 @@ public class UnionFindTests {
 	}
 	
 	@Test
-	public void union_find_should_have_two_components() {
-		UnionFind uf = new UnionFind(3);
+	public void quick_find_should_have_two_components() {
+		QuickFind uf = new QuickFind(3);
 		
 		uf.union(0, 2);
 		
@@ -44,8 +44,8 @@ public class UnionFindTests {
 	}
 	
 	@Test
-	public void union_find_should_throw_index_out_of_bounds_exception() {
-		UnionFind uf = new UnionFind(3);
+	public void quick_find_should_throw_index_out_of_bounds_exception() {
+		QuickFind uf = new QuickFind(3);
 		
 		try {
 			uf.union(0, 4);
